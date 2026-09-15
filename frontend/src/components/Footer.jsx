@@ -1,0 +1,89 @@
+import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
+function Footer() {
+  return (
+    <footer className="footer">
+
+      <div className="container">
+
+        <div className="footer-top">
+
+          <div className="footer-brand">
+
+            <Link to="/" className="brand">
+
+              <div className="brand-mark">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div className="brand-text">
+                <strong>PACK BONE</strong>
+                <small>CONSULTING</small>
+              </div>
+
+            </Link>
+
+            <p>
+              The backbone of the pack.
+              <br />
+              Packaging Development Consultancy.
+            </p>
+
+          </div>
+
+          <div className="footer-column">
+            <h4>NAVIGATE</h4>
+
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/industries">Industries</Link>
+          </div>
+
+          <div className="footer-column">
+            <h4>EXPLORE</h4>
+
+            <Link to="/approach">Our Approach</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
+          </div>
+
+          <div className="footer-column footer-contact">
+            <h4>CONTACT</h4>
+
+            <a href="mailto:info@packbone.com">
+              info@packbone.com
+            </a>
+
+            <a href="tel:+919841358284">
+              +91 98413 58284
+            </a>
+
+            <Link to="/contact">
+              Start a Project
+              <ArrowUpRight size={14} />
+            </Link>
+          </div>
+
+        </div>
+
+        <div className="footer-bottom">
+          <span>
+            © 2026 PACK BONE CONSULTING
+          </span>
+
+          <span>
+            PACKAGING DEVELOPMENT CONSULTANCY
+          </span>
+        </div>
+
+      </div>
+
+    </footer>
+  );
+}
+
+export default Footer;
