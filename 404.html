@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <script>
+    const base = "/Pack-Bone-Consulting/";
+
+    const path = window.location.pathname;
+
+    if (path.startsWith(base)) {
+      const route = path.slice(base.length);
+
+      window.location.replace(
+        base + "?/" + route +
+        (window.location.search ? "&" + window.location.search.slice(1) : "") +
+        window.location.hash
+      );
+    }
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
