@@ -54,8 +54,8 @@ function Footer() {
           <div className="footer-column footer-contact">
             <h4>CONTACT</h4>
 
-            <a href="mailto:info@packbone.com">
-              info@packbone.com
+            <a href="mailto:packboneconsulting@gmail.com">
+              packboneconsulting@gmail.com
             </a>
 
             <a href="tel:+919841358284">

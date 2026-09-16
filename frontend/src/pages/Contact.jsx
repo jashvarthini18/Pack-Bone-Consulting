@@ -93,8 +93,8 @@ function Contact() {
 
                   <div>
                     <small>EMAIL</small>
-                    <a href="mailto:info@packbone.com">
-                      info@packbone.com
+                    <a href="mailto:packboneconsulting@gmail.com">
+                      packboneconsulting@gmail.com
                     </a>
                   </div>
                 </div>
