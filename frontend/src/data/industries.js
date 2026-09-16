@@ -4,7 +4,7 @@ const industries = [
     number: "01",
     name: "FMCG",
     slug: "fmcg",
-    image: "./public/images/industries/fmcg.png",
+    image: `${import.meta.env.BASE_URL}images/industries/fmcg.png`,
 
     description:
       "Packaging development support for fast-moving consumer products where cost, performance, manufacturability and speed to market are critical.",
@@ -31,7 +31,7 @@ const industries = [
     number: "02",
     name: "PERSONAL CARE",
     slug: "personal-care",
-    image: "./images/industries/personal-care.png",
+    image: `${import.meta.env.BASE_URL}images/industries/personal-care.png`,
 
     description:
       "Packaging solutions for personal care products with focus on functionality, usability, appearance, quality and commercial performance.",
@@ -58,7 +58,7 @@ const industries = [
     number: "03",
     name: "HOME CARE",
     slug: "home-care",
-    image: "./images/industries/home-care.png",
+    image: `${import.meta.env.BASE_URL}images/industries/home-care.png`,
 
     description:
       "Packaging development for home care products with emphasis on reliability, manufacturability, cost and performance throughout the product lifecycle.",
@@ -85,7 +85,7 @@ const industries = [
     number: "04",
     name: "BEAUTY & COSMETICS",
     slug: "beauty-cosmetics",
-    image: "./images/industries/beauty-cosmetics.png",
+    image: `${import.meta.env.BASE_URL}images/industries/beauty-cosmetics.png`,
 
     description:
       "Packaging development that balances product presentation, functionality, quality, manufacturability and commercial requirements.",
@@ -112,7 +112,7 @@ const industries = [
     number: "05",
     name: "PHARMACEUTICALS",
     slug: "pharmaceuticals",
-    image: "./images/industries/pharmaceuticals.png",
+    image: `${import.meta.env.BASE_URL}images/industries/pharmaceuticals.png`,
 
     description:
       "Packaging development support focused on specification, performance, validation, reliability and production compatibility.",
@@ -139,7 +139,7 @@ const industries = [
     number: "06",
     name: "HEALTHCARE & WELLNESS",
     slug: "healthcare-wellness",
-    image: "./images/industries/healthcare-wellness.png",
+    image: `${import.meta.env.BASE_URL}images/industries/healthcare-wellness.png`,
 
     description:
       "Packaging solutions for healthcare and wellness products with emphasis on reliability, product protection, usability and quality.",
@@ -166,7 +166,7 @@ const industries = [
     number: "07",
     name: "FOOD & BEVERAGES",
     slug: "food-beverages",
-    image: "./images/industries/food-beverages.png",
+    image: `${import.meta.env.BASE_URL}images/industries/food-beverages.png`,
 
     description:
       "Packaging development for food and beverage products with focus on performance, manufacturing, logistics and cost efficiency.",
@@ -193,7 +193,7 @@ const industries = [
     number: "08",
     name: "CONSUMER PRODUCTS",
     slug: "consumer-products",
-    image: "./images/industries/consumer-products.png",
+    image: `${import.meta.env.BASE_URL}images/industries/consumer-products.png`,
 
     description:
       "Practical packaging development for consumer products, connecting product requirements with manufacturing, supplier and commercial needs.",
@@ -220,7 +220,7 @@ const industries = [
     number: "09",
     name: "EXPORT & PRIVATE LABEL",
     slug: "export-private-label",
-    image: "./images/industries/export-private-label.png",
+    image: `${import.meta.env.BASE_URL}images/industries/export-private-label.png`,
 
     description:
       "Packaging development support for export and private-label products, balancing packaging performance, commercial requirements and logistics.",
