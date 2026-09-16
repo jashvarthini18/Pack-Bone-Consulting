@@ -49,8 +49,11 @@ function About() {
                 <div className="about-grid-lines"></div>
 
                 <div className="about-initials">
-                  PB
-                </div>
+  <img
+    src="./pack-bone-logo-with-name.png"
+    alt="Pack Bone Consulting"
+  />
+</div>
 
                 <div className="about-caption">
                   <span>PACKAGING</span>
@@ -125,8 +128,8 @@ function About() {
         <div className="container">
 
           <div className="principle-mark">
-            PB
-          </div>
+  <img src="./pack-bone-logo.png" alt="Pack Bone" />
+</div>
 
           <blockquote>
             “Packaging should not only look right.

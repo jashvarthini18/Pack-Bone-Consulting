@@ -4,26 +4,23 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer">
-
       <div className="container">
-
         <div className="footer-top">
-
           <div className="footer-brand">
-
             <Link to="/" className="brand">
-
+              {/* <div className="brand-mark">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div> */}
               <div className="brand-mark">
-                <span></span>
-                <span></span>
-                <span></span>
+                <img src="./pack-bone-logo.png" alt="Pack Bone Consulting" />
               </div>
 
               <div className="brand-text">
                 <strong>PACK BONE</strong>
                 <small>CONSULTING</small>
               </div>
-
             </Link>
 
             <p>
@@ -31,7 +28,6 @@ function Footer() {
               <br />
               Packaging Development Consultancy.
             </p>
-
           </div>
 
           <div className="footer-column">
@@ -58,30 +54,21 @@ function Footer() {
               packboneconsulting@gmail.com
             </a>
 
-            <a href="tel:+919841358284">
-              +91 98413 58284
-            </a>
+            <a href="tel:+919841358284">+91 98413 58284</a>
 
             <Link to="/contact">
               Start a Project
               <ArrowUpRight size={14} />
             </Link>
           </div>
-
         </div>
 
         <div className="footer-bottom">
-          <span>
-            © 2026 PACK BONE CONSULTING
-          </span>
+          <span>© 2026 PACK BONE CONSULTING</span>
 
-          <span>
-            PACKAGING DEVELOPMENT CONSULTANCY
-          </span>
+          <span>PACKAGING DEVELOPMENT CONSULTANCY</span>
         </div>
-
       </div>
-
     </footer>
   );
 }

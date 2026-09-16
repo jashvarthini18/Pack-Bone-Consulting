@@ -82,7 +82,9 @@ function Hero() {
 
             <div className="package-box">
               <div className="box-front">
-                <div className="box-logo">PB</div>
+                <div className="box-logo">
+                  <img src="./pack-bone-logo.png" alt="Pack Bone" />
+                </div>
 
                 <div className="box-line"></div>
 
@@ -271,16 +273,16 @@ const servicePreview = [
   ["06", "Machinery & Automation", Settings2, "machinery-automation"],
   ["07", "Turnkey Packaging Projects", Truck, "turnkey-packaging-projects"],
   ["08", "Packaging Testing & Validation", FlaskConical, "testing-validation"],
-  ["09", "Transit & Trials Packaging Performance", Activity, "transit-trials-packaging-performance"],
-  ["10", "Packaging Validation", Check, "packaging-validation"],
-  ["11", "Logistics & Container Optimisation", Truck, "logistics-container-optimisation"],
-  ["12", "Artwork & Packaging Graphics Development", Package, "artwork-packaging-graphics-development"],
-  ["13", "Packaging Specification Development", Layers3, "packaging-specification-development"],
-  ["14", "Packaging Failure Investigation", Factory, "packaging-failure-investigation"],
-  ["15", "Competitive Packaging Benchmarking", Zap, "competitive-packaging-benchmarking"],
-  ["16", "Packaging Sustainability", ShieldCheck, "packaging-sustainability"],
-  ["17", "Packaging Procurement Technical Support", Settings2, "packaging-procurement-technical-support"],
-  ["18", "Packaging Project Management", Truck, "packaging-project-management"],
+  // ["09", "Transit & Trials Packaging Performance", Activity, "transit-trials-packaging-performance"],
+  // ["10", "Packaging Validation", Check, "packaging-validation"],
+  // ["11", "Logistics & Container Optimisation", Truck, "logistics-container-optimisation"],
+  // ["12", "Artwork & Packaging Graphics Development", Package, "artwork-packaging-graphics-development"],
+  // ["13", "Packaging Specification Development", Layers3, "packaging-specification-development"],
+  // ["14", "Packaging Failure Investigation", Factory, "packaging-failure-investigation"],
+  // ["15", "Competitive Packaging Benchmarking", Zap, "competitive-packaging-benchmarking"],
+  // ["16", "Packaging Sustainability", ShieldCheck, "packaging-sustainability"],
+  // ["17", "Packaging Procurement Technical Support", Settings2, "packaging-procurement-technical-support"],
+  // ["18", "Packaging Project Management", Truck, "packaging-project-management"],
 ];
 
 function ServicesPreview() {

@@ -200,14 +200,12 @@ p {
   align-items: center;
   gap: 3px;
 
-  transform: skew(-15deg);
 }
 
 .brand-mark span {
   display: block;
   width: 7px;
   height: 25px;
-  background: var(--orange);
 }
 
 .brand-mark span:nth-child(2) {
@@ -254,6 +252,33 @@ p {
   font-weight: 600;
 
   transition: color 0.2s ease;
+}
+
+.nav-links .services-dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+  background: transparent;
+
+  color: #bcbcbc;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: normal;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.nav-links .services-dropdown-trigger:hover {
+  color: var(--orange);
 }
 
 .nav-links a:hover {
@@ -3711,7 +3736,7 @@ p {
   align-items: center;
 }
 
-.nav-dropdown-trigger {
+/* .nav-dropdown-trigger {
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -3727,11 +3752,33 @@ p {
   cursor: pointer;
 
   transition: color 0.25s ease;
+} */
+ .nav-dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+
+  color: #bcbcbc;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: normal;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
 }
 
 .nav-dropdown-trigger:hover,
 .nav-dropdown.dropdown-open .nav-dropdown-trigger {
-  color: var(--white);
+  color: var(--orange);
 }
 
 .services-chevron {
@@ -3942,7 +3989,7 @@ p {
    MOBILE DROPDOWN
    ========================================================= */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
   .nav-dropdown {
     display: block;
@@ -3974,6 +4021,79 @@ p {
 
     box-shadow: none;
 
+    animation: none;
+  }
+
+  .services-dropdown::before {
+    display: none;
+  }
+
+  .dropdown-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dropdown-grid .dropdown-view-all {
+    grid-column: auto;
+  }
+
+  .dropdown-grid > a {
+    min-height: 46px;
+  }
+} */
+ /* =========================================================
+   MOBILE DROPDOWN
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .nav-dropdown {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-dropdown-trigger {
+    width: 100%;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 0;
+    margin: 0;
+
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid var(--border);
+
+    color: var(--white);
+
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: normal;
+
+    cursor: pointer;
+  }
+
+  /* IMPORTANT:
+     Services should NOT turn orange when dropdown is open */
+  .nav-dropdown-trigger:hover,
+  .nav-dropdown.dropdown-open .nav-dropdown-trigger {
+    color: var(--white);
+  }
+
+  .services-dropdown {
+    position: static;
+
+    width: 100%;
+    transform: none;
+
+    margin: 0 0 10px;
+    padding: 15px;
+
+    box-shadow: none;
     animation: none;
   }
 
