@@ -17,7 +17,7 @@ function About() {
 
           <div className="eyebrow">
             <span className="eyebrow-line"></span>
-            ABOUT PACK BONE
+            ABOUT packbone
           </div>
 
           <h1>
@@ -51,7 +51,7 @@ function About() {
                 <div className="about-initials">
   <img
     src="./pack-bone-logo-with-name.png"
-    alt="Pack Bone Consulting"
+    alt="packbone Consulting"
   />
 </div>
 
@@ -128,7 +128,7 @@ function About() {
         <div className="container">
 
           <div className="principle-mark">
-  <img src="./pack-bone-logo.png" alt="Pack Bone" />
+  <img src="./pack-bone-logo.png" alt="Packbone" />
 </div>
 
           <blockquote>

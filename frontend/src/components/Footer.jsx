@@ -14,11 +14,11 @@ function Footer() {
                 <span></span>
               </div> */}
               <div className="brand-mark">
-                <img src="./pack-bone-logo.png" alt="Pack Bone Consulting" />
+                <img src="./pack-bone-logo.png" alt="Packbone Consulting" />
               </div>
 
               <div className="brand-text">
-                <strong>PACK BONE</strong>
+                <strong>packbone</strong>
                 <small>CONSULTING</small>
               </div>
             </Link>
@@ -55,6 +55,8 @@ function Footer() {
             </a>
 
             <a href="tel:+919841358284">+91 98413 58284</a>
+            <a href="tel:+917358053140">+91 73580 53140</a>
+
 
             <Link to="/contact">
               Start a Project
@@ -64,7 +66,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 PACK BONE CONSULTING</span>
+          <span>© 2026 Packbone CONSULTING</span>
 
           <span>PACKAGING DEVELOPMENT CONSULTANCY</span>
         </div>

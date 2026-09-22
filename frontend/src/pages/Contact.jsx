@@ -107,8 +107,11 @@ function Contact() {
                     <a href="tel:+919841358284">
                       +91 98413 58284
                     </a>
+                    
+                    <a href="tel:+917358053140">+91 73580 53140</a>
                   </div>
                 </div>
+
 
                 <div className="contact-detail">
                   <MapPin size={20} />

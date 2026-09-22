@@ -39,11 +39,11 @@ function Navbar() {
             <span></span>
           </div> */}
           <div className="brand-mark">
-            <img src="./pack-bone-logo.png" alt="Pack Bone Consulting" />
+            <img src="./pack-bone-logo.png" alt="Packbone Consulting" />
           </div>
 
           <div className="brand-text">
-            <strong>PACK BONE</strong>
+            <strong>packbone</strong>
             <small>CONSULTING</small>
           </div>
         </Link>

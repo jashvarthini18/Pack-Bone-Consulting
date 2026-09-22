@@ -83,7 +83,7 @@ function Hero() {
             <div className="package-box">
               <div className="box-front">
                 <div className="box-logo">
-                  <img src="./pack-bone-logo.png" alt="Pack Bone" />
+                  <img src="./pack-bone-logo.png" alt="packbone" />
                 </div>
 
                 <div className="box-line"></div>

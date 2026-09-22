@@ -3,8 +3,8 @@ import { useEffect } from "react";
 function PageMeta({ title }) {
   useEffect(() => {
     document.title = title
-      ? `${title} | Pack Bone Consulting`
-      : "Pack Bone Consulting | Packaging Development Consultancy";
+      ? `${title} | Packbone Consulting`
+      : "Packbone Consulting | Packaging Development Consultancy";
   }, [title]);
 
   return null;
