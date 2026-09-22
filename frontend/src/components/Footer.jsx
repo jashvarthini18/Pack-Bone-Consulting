@@ -66,7 +66,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 Packbone CONSULTING</span>
+          <span>© 2026 PACKBONE CONSULTING</span>
 
           <span>PACKAGING DEVELOPMENT CONSULTANCY</span>
         </div>
