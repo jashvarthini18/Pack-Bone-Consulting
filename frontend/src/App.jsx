@@ -49,7 +49,7 @@ function AppRoutes() {
 
 function App() {
   return (
-    <BrowserRouter basename="/Pack-Bone-Consulting/">
+    <BrowserRouter>
       <AppRoutes />
     </BrowserRouter>
   );
