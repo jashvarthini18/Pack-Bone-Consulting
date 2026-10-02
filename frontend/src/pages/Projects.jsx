@@ -135,7 +135,11 @@ function Projects() {
 
   return (
     <main className="projects-page">
-      <PageMeta title="Projects" />
+      {/* <PageMeta title="Projects" /> */}
+      <PageMeta
+  title="Projects"
+  description="Explore packaging consulting projects covering packaging performance, failure analysis, quality improvement, cost optimisation and commercialisation."
+/>
       {/* PAGE HERO */}
       <section className="inner-hero">
         <div className="container">

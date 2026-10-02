@@ -140,7 +140,11 @@ function Approach() {
 
   return (
     <div className="inner-page">
-      <PageMeta title="Approach" />
+      {/* <PageMeta title="Approach" /> */}
+      <PageMeta
+  title="Our Approach"
+  description="Discover Packbone Consulting's structured packaging development approach from understanding and defining through development, testing, validation, optimisation and commercialisation."
+/>
 
       {/* HERO */}
       <section className="inner-hero">

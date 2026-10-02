@@ -9,7 +9,11 @@ import { Link } from "react-router-dom";
 function About() {
   return (
     <div className="inner-page">
-      <PageMeta title="About" />
+      {/* <PageMeta title="About" /> */}
+      <PageMeta
+  title="About Us"
+  description="Learn about Packbone Consulting and our packaging development, technical, commercial and project management expertise."
+/>
 
       <section className="inner-hero">
 

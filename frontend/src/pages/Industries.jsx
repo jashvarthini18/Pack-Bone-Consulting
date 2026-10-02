@@ -10,8 +10,12 @@ function Industries() {
 
   return (
     <div className="inner-page industries-page">
-      <PageMeta title="Industries" />
+      {/* <PageMeta title="Industries" /> */}
 
+<PageMeta
+  title="Industries"
+  description="Packaging consulting solutions for FMCG, personal care, home care, beauty, pharmaceuticals, healthcare, food and beverages, consumer products and private label products."
+/>
       {/* =====================================================
           HERO
       ===================================================== */}

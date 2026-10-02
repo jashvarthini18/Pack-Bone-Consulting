@@ -136,7 +136,11 @@ function Services() {
   return (
     <div className="inner-page services-page">
 
-      <PageMeta title="Services" />
+      {/* <PageMeta title="Services" /> */}
+      <PageMeta
+  title="Services"
+  description="Explore Packbone Consulting's packaging development, NPD, vendor development, cost optimisation, testing, validation, automation and logistics services."
+/>
 
 
       {/* =====================================================

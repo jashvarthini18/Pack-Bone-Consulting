@@ -42,14 +42,18 @@ function Contact() {
 
   return (
     <div className="inner-page">
-      <PageMeta title="Contact" />
+      {/* <PageMeta title="Contact" /> */}
+      <PageMeta
+  title="Contact Us"
+  description="Contact Packbone Consulting for packaging development consultancy, NPD, vendor development, testing, validation, cost optimisation and project management."
+/>
 
       {/* HERO */}
       <section className="inner-hero">
         <div className="container">
           <div className="eyebrow">
             <span className="eyebrow-line"></span>
-            CONTACT
+            CONTACT US
           </div>
 
           <h1>
@@ -250,7 +254,7 @@ function Contact() {
 
               {status === "success" && (
                 <div className="form-message success">
-                  Thank you for contacting Pack Bone Consulting. Your enquiry has been
+                  Thank you for contacting Packbone Consulting. Your enquiry has been
     received successfully.
                 </div>
               )}
