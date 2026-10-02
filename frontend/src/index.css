@@ -1296,11 +1296,6 @@ p {
 
   transform: translate(-50%, -50%);
 
-  color: var(--orange);
-
-  font-size: 100px;
-  font-weight: 800;
-  letter-spacing: -0.12em;
 }
 
 .about-caption {
