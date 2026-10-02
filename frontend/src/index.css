@@ -193,8 +193,8 @@ p {
 }
 
 .brand-mark {
-  width: 31px;
-  height: 31px;
+  width: 35px;
+  height: 35px;
 
   display: flex;
   align-items: center;
@@ -440,7 +440,7 @@ p {
   gap: 10px;
 }
 
-.hero-visual {
+/* .hero-visual {
   position: relative;
 
   min-height: 570px;
@@ -448,6 +448,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-60px);
 }
 
 .visual-label {
@@ -552,8 +559,8 @@ p {
 }
 
 .box-logo {
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
 
   display: flex;
   align-items: center;
@@ -561,7 +568,7 @@ p {
 
   margin-bottom: 35px;
 
-  background: var(--orange);
+  /* background: var(--orange); */
 
   font-weight: 900;
   font-size: 15px;
@@ -5338,4 +5345,8 @@ p {
   color: #ffb8b8;
   border-color: rgba(255, 120, 120, 0.3);
   background: rgba(255, 120, 120, 0.05);
+}
+
+.hero-visual {
+  transform: translateY(-70px);
 }

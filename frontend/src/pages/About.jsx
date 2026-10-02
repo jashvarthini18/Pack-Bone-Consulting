@@ -50,7 +50,7 @@ function About() {
 
                 <div className="about-initials">
   <img
-    src="./pack-bone-logo-with-name.png"
+    src="./pack-bone-logo-with-name.jpeg"
     alt="packbone Consulting"
   />
 </div>

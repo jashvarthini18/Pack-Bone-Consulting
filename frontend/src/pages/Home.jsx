@@ -76,51 +76,9 @@ function Hero() {
           </Reveal>
         </div>
 
-        <Reveal direction="left" delay={0.25} className="hero-visual">
-          <div className="package-visual">
-            <div className="package-shadow"></div>
-
-            <div className="package-box">
-              <div className="box-front">
-                <div className="box-logo">
-                  <img src="./pack-bone-logo.png" alt="packbone" />
-                </div>
-
-                <div className="box-line"></div>
-
-                <strong>
-                  PACK
-                  <br />
-                  BONE
-                </strong>
-
-                <small>PACKAGING SOLUTIONS</small>
-              </div>
-
-              <div className="box-side"></div>
-
-              <div className="box-top"></div>
-            </div>
-
-            <div className="technical-dimension dimension-width">
-              <span></span>
-              120 mm
-              <span></span>
-            </div>
-
-            <div className="technical-dimension dimension-height">
-              <span></span>
-              180 mm
-              <span></span>
-            </div>
-
-            <div className="visual-crosshair crosshair-1"></div>
-
-            <div className="visual-crosshair crosshair-2"></div>
-
-            <div className="visual-circle"></div>
-          </div>
-        </Reveal>
+        <div className="hero-visual">
+          <img src="./pack-bone-logo-with-name.png" alt="packbone" />
+        </div>
       </div>
     </section>
   );
