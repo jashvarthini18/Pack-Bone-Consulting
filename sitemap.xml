@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main pages -->
 
   <url>
     <loc>https://packboneconsulting.netlify.app/</loc>
@@ -28,6 +29,44 @@
 
   <url>
     <loc>https://packboneconsulting.netlify.app/contact</loc>
+  </url>
+
+  <!-- Industry pages -->
+
+  <url>
+    <loc>https://packboneconsulting.netlify.app/industries/fmcg</loc>
+  </url>
+
+  <url>
+    <loc>https://packboneconsulting.netlify.app/industries/personal-care</loc>
+  </url>
+
+  <url>
+    <loc>https://packboneconsulting.netlify.app/industries/home-care</loc>
+  </url>
+
+  <url>
+    <loc>https://packboneconsulting.netlify.app/industries/beauty-cosmetics</loc>
+  </url>
+
+  <url>
+    <loc>https://packboneconsulting.netlify.app/industries/pharmaceuticals</loc>
+  </url>
+
+  <url>
+    <loc>https://packboneconsulting.netlify.app/industries/healthcare-wellness</loc>
+  </url>
+
+  <url>
+    <loc>https://packboneconsulting.netlify.app/industries/food-beverages</loc>
+  </url>
+
+  <url>
+    <loc>https://packboneconsulting.netlify.app/industries/consumer-products</loc>
+  </url>
+
+  <url>
+    <loc>https://packboneconsulting.netlify.app/industries/export-private-label</loc>
   </url>
 
 </urlset>
