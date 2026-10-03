@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 import Reveal from "../components/Reveal";
 
-import {
-  ArrowRight,
-  ArrowUpRight,
-  Check,
-} from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
 
 import { Link } from "react-router-dom";
 
@@ -28,9 +25,7 @@ function Services() {
 
     if (!hash) return;
 
-    const service = services.find(
-      (item) => item.slug === hash
-    );
+    const service = services.find((item) => item.slug === hash);
 
     if (!service) return;
 
@@ -46,9 +41,7 @@ function Services() {
         });
       }
     }, 300);
-
   }, []);
-
 
   /*
    * =========================================================
@@ -65,17 +58,14 @@ function Services() {
         return;
       }
 
-      const service = services.find(
-        (item) => item.slug === hash
-      );
+      const service = services.find((item) => item.slug === hash);
 
       if (!service) return;
 
       setActiveService(service.number);
 
       setTimeout(() => {
-        const element =
-          document.getElementById(hash);
+        const element = document.getElementById(hash);
 
         if (element) {
           element.scrollIntoView({
@@ -86,19 +76,12 @@ function Services() {
       }, 100);
     };
 
-    window.addEventListener(
-      "hashchange",
-      handleHashChange
-    );
+    window.addEventListener("hashchange", handleHashChange);
 
     return () => {
-      window.removeEventListener(
-        "hashchange",
-        handleHashChange
-      );
+      window.removeEventListener("hashchange", handleHashChange);
     };
   }, []);
-
 
   /*
    * =========================================================
@@ -107,50 +90,44 @@ function Services() {
    */
 
   const handleServiceClick = (service) => {
-    const isCurrentlyActive =
-      activeService === service.number;
+    const isCurrentlyActive = activeService === service.number;
 
-    setActiveService(
-      isCurrentlyActive
-        ? null
-        : service.number
-    );
+    setActiveService(isCurrentlyActive ? null : service.number);
 
     // Update URL hash
     if (!isCurrentlyActive) {
-      window.history.replaceState(
-        null,
-        "",
-        `#${service.slug}`
-      );
+      window.history.replaceState(null, "", `#${service.slug}`);
     } else {
-      window.history.replaceState(
-        null,
-        "",
-        window.location.pathname
-      );
+      window.history.replaceState(null, "", window.location.pathname);
     }
   };
 
-
   return (
     <div className="inner-page services-page">
-
       {/* <PageMeta title="Services" /> */}
       <PageMeta
-  title="Services"
-  description="Explore Packbone Consulting's packaging development, NPD, vendor development, cost optimisation, testing, validation, automation and logistics services."
-/>
-
+        title="Services"
+        description="Explore Packbone Consulting's packaging development, NPD, vendor development, cost optimisation, testing, validation, automation and logistics services."
+      />
+      <BreadcrumbSchema
+        items={[
+          {
+            name: "Home",
+            url: "https://packboneconsulting.netlify.app/",
+          },
+          {
+            name: "Services",
+            url: "https://packboneconsulting.netlify.app/services",
+          },
+        ]}
+      />
 
       {/* =====================================================
           HERO
       ===================================================== */}
 
       <section className="inner-hero">
-
         <div className="container">
-
           <div className="eyebrow">
             <span className="eyebrow-line"></span>
             OUR SERVICES
@@ -162,151 +139,91 @@ function Services() {
           </h1>
 
           <p>
-            End-to-end packaging development,
-            optimisation, testing, validation and
-            commercialisation support.
+            End-to-end packaging development, optimisation, testing, validation
+            and commercialisation support.
           </p>
-
         </div>
-
       </section>
-
 
       {/* =====================================================
           SERVICES
       ===================================================== */}
 
       <section className="all-services section">
-
         <div className="container">
-
           <div className="services-intro">
-
-            <span>
-              18 SPECIALISED CAPABILITIES
-            </span>
+            <span>18 SPECIALISED CAPABILITIES</span>
 
             <p>
-              From concept development to commercial
-              production, our services cover the
-              complete packaging lifecycle.
+              From concept development to commercial production, our services
+              cover the complete packaging lifecycle.
             </p>
-
           </div>
 
-
           <div className="service-list">
-
             {services.map((service, index) => {
-
-              const isActive =
-                activeService === service.number;
+              const isActive = activeService === service.number;
 
               return (
-                <Reveal
-                  key={service.number}
-                  delay={index * 0.025}
-                >
-
+                <Reveal key={service.number} delay={index * 0.025}>
                   <article
                     id={service.slug}
-                    className={`large-service-card ${
-                      isActive ? "active" : ""
-                    }`}
-                    onClick={() =>
-                      handleServiceClick(service)
-                    }
+                    className={`large-service-card ${isActive ? "active" : ""}`}
+                    onClick={() => handleServiceClick(service)}
                   >
-
                     {/* NUMBER */}
 
-                    <div className="large-service-number">
-                      {service.number}
-                    </div>
-
+                    <div className="large-service-number">{service.number}</div>
 
                     {/* MAIN CONTENT */}
 
                     <div className="large-service-main">
-
                       <div className="large-service-meta">
                         {service.category}
                       </div>
 
-                      <h2>
-                        {service.title}
-                      </h2>
+                      <h2>{service.title}</h2>
 
                       <p className="large-service-description">
                         {service.description}
                       </p>
 
-
                       {/* POINTS */}
 
                       <div
                         className={`service-points ${
-                          isActive
-                            ? "show-points"
-                            : ""
+                          isActive ? "show-points" : ""
                         }`}
                       >
+                        {service.points.map((point) => (
+                          <div className="service-point" key={point}>
+                            <Check size={14} />
 
-                        {service.points.map(
-                          (point) => (
-
-                            <div
-                              className="service-point"
-                              key={point}
-                            >
-
-                              <Check size={14} />
-
-                              <span>
-                                {point}
-                              </span>
-
-                            </div>
-
-                          )
-                        )}
-
+                            <span>{point}</span>
+                          </div>
+                        ))}
                       </div>
-
                     </div>
-
 
                     {/* ARROW */}
 
                     <div className="large-service-arrow">
-
-                      <ArrowUpRight
-                        size={23}
-                      />
-
+                      <ArrowUpRight size={23} />
                     </div>
-
                   </article>
-
                 </Reveal>
               );
             })}
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* =====================================================
           CTA
       ===================================================== */}
 
       <section className="inner-cta">
-
         <div className="container">
-
           <div className="eyebrow">
             <span className="eyebrow-line"></span>
             HAVE A PACKAGING CHALLENGE?
@@ -317,19 +234,12 @@ function Services() {
             <span>THE SOLUTION.</span>
           </h2>
 
-          <Link
-            to="/contact"
-            className="cta-button"
-          >
+          <Link to="/contact" className="cta-button">
             TALK TO US
-
             <ArrowRight size={19} />
           </Link>
-
         </div>
-
       </section>
-
     </div>
   );
 }

@@ -6,7 +6,12 @@ import PageMeta from "../components/PageMeta";
 function NotFound() {
   return (
     <main className="not-found-page">
-        <PageMeta title="404 - Page Not Found" />
+      {/* <PageMeta title="404 - Page Not Found" /> */}
+      <PageMeta
+        title="Page Not Found"
+        description="The page you are looking for could not be found."
+        noindex
+      />
       <div className="container">
         <Reveal>
           <div className="not-found-content">
@@ -20,8 +25,8 @@ function NotFound() {
             </h1>
 
             <p>
-              The page you're looking for may have been moved, removed or
-              never existed.
+              The page you're looking for may have been moved, removed or never
+              existed.
             </p>
 
             <div className="not-found-actions">
