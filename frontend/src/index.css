@@ -2958,6 +2958,36 @@ p {
   line-height: 1.75;
 }
 
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.linkedin-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff5a1f;
+  color: #000;
+  border-radius: 2px;
+
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+
+  font-family: Arial, sans-serif;
+  flex-shrink: 0;
+}
+
+.contact-linkedin-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
 /* ---------- PROJECT RESPONSIVE ---------- */
 
 /* @media (max-width: 600px) {

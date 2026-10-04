@@ -57,6 +57,15 @@ function Footer() {
             <a href="tel:+919841358284">+91 98413 58284</a>
             <a href="tel:+917358053140">+91 73580 53140</a>
 
+            <a
+              href="YOUR_LINKEDIN_URL"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkedin-link"
+            >
+              <span className="linkedin-icon">in</span>
+              LinkedIn
+            </a>
 
             <Link to="/contact">
               Start a Project

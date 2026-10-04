@@ -30,7 +30,7 @@ function About() {
         <div className="container">
           <div className="eyebrow">
             <span className="eyebrow-line"></span>
-            ABOUT packbone
+            ABOUT PACKBONE CONSULTING
           </div>
 
           <h1>

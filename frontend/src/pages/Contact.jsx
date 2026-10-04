@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 
-
 import PageMeta from "../components/PageMeta";
 
 function Contact() {
@@ -44,9 +43,9 @@ function Contact() {
     <div className="inner-page">
       {/* <PageMeta title="Contact" /> */}
       <PageMeta
-  title="Contact Us"
-  description="Contact Packbone Consulting for packaging development consultancy, NPD, vendor development, testing, validation, cost optimisation and project management."
-/>
+        title="Contact Us"
+        description="Contact Packbone Consulting for packaging development consultancy, NPD, vendor development, testing, validation, cost optimisation and project management."
+      />
 
       {/* HERO */}
       <section className="inner-hero">
@@ -72,7 +71,6 @@ function Contact() {
       <section className="contact-section section">
         <div className="container">
           <div className="contact-grid">
-
             {/* CONTACT INFO */}
             <div className="contact-info">
               <div className="eyebrow dark-eyebrow">
@@ -91,7 +89,6 @@ function Contact() {
               </p>
 
               <div className="contact-details">
-
                 <div className="contact-detail">
                   <Mail size={20} />
 
@@ -108,14 +105,29 @@ function Contact() {
 
                   <div>
                     <small>PHONE</small>
-                    <a href="tel:+919841358284">
-                      +91 98413 58284
-                    </a>
-                    
+                    <a href="tel:+919841358284">+91 98413 58284</a>
+
                     <a href="tel:+917358053140">+91 73580 53140</a>
                   </div>
                 </div>
 
+                <div className="contact-detail">
+                  <span className="linkedin-icon contact-linkedin-icon" style={{ fontSize: "11px", fontWeight: "800px" }}>
+                    in
+                  </span>
+
+                  <div>
+                    <small>LINKEDIN</small>
+
+                    <a
+                      href="YOUR_LINKEDIN_URL"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Packbone Consulting
+                    </a>
+                  </div>
+                </div>
 
                 <div className="contact-detail">
                   <MapPin size={20} />
@@ -125,18 +137,12 @@ function Contact() {
                     <span>India</span>
                   </div>
                 </div>
-
               </div>
             </div>
 
             {/* FORM */}
-            <form
-              className="contact-form"
-              onSubmit={handleSubmit}
-            >
-
+            <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
-
                 <div className="form-group">
                   <label htmlFor="name">NAME</label>
 
@@ -160,11 +166,9 @@ function Contact() {
                     required
                   />
                 </div>
-
               </div>
 
               <div className="form-row">
-
                 <div className="form-group">
                   <label htmlFor="email">EMAIL</label>
 
@@ -188,13 +192,10 @@ function Contact() {
                     required
                   />
                 </div>
-
               </div>
 
               <div className="form-group">
-                <label htmlFor="requirement">
-                  REQUIREMENT
-                </label>
+                <label htmlFor="requirement">REQUIREMENT</label>
 
                 <select
                   id="requirement"
@@ -229,9 +230,7 @@ function Contact() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="message">
-                  MESSAGE
-                </label>
+                <label htmlFor="message">MESSAGE</label>
 
                 <textarea
                   id="message"
@@ -254,8 +253,8 @@ function Contact() {
 
               {status === "success" && (
                 <div className="form-message success">
-                  Thank you for contacting Packbone Consulting. Your enquiry has been
-    received successfully.
+                  Thank you for contacting Packbone Consulting. Your enquiry has
+                  been received successfully.
                 </div>
               )}
 
@@ -264,9 +263,7 @@ function Contact() {
                   Something went wrong. Please try again or contact us directly.
                 </div>
               )}
-
             </form>
-
           </div>
         </div>
       </section>

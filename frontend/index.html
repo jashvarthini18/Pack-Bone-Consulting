@@ -2,11 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Search Console Verification -->
     <meta
@@ -19,33 +16,18 @@
         const search = window.location.search;
 
         if (search.startsWith("?/")) {
-          const route = search
-            .slice(2)
-            .split("&")[0]
-            .replace(/~and~/g, "&");
+          const route = search.slice(2).split("&")[0].replace(/~and~/g, "&");
 
-          const newPath =
-            "/Packbone-Consulting/" +
-            route;
+          const newPath = "/Packbone-Consulting/" + route;
 
-          window.history.replaceState(
-            null,
-            "",
-            newPath
-          );
+          window.history.replaceState(null, "", newPath);
         }
       })();
     </script>
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="/pack-bone-logo.png"
-    />
+    <link rel="icon" type="image/png" href="/pack-bone-logo.png" />
 
-    <title>
-      Packbone Consulting | Packaging Development Consultancy
-    </title>
+    <title>Packbone Consulting | Packaging Development Consultancy</title>
 
     <meta
       name="description"
@@ -68,23 +50,14 @@
       content="https://packboneconsulting.netlify.app/pack-bone-logo-with-name.png"
     />
 
-    <meta
-      property="og:url"
-      content="https://packboneconsulting.netlify.app/"
-    />
+    <meta property="og:url" content="https://packboneconsulting.netlify.app/" />
 
     <meta property="og:type" content="website" />
 
-    <meta
-      property="og:site_name"
-      content="Packbone Consulting"
-    />
+    <meta property="og:site_name" content="Packbone Consulting" />
 
     <!-- Twitter / X -->
-    <meta
-      name="twitter:card"
-      content="summary_large_image"
-    />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <meta
       name="twitter:title"
@@ -102,7 +75,7 @@
     />
 
     <!-- Organization Structured Data -->
-    <script type="application/ld+json">
+    <!-- <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
@@ -111,16 +84,23 @@
         "logo": "https://packboneconsulting.netlify.app/pack-bone-logo-with-name.png",
         "description": "Packaging development consultancy providing end-to-end packaging solutions from concept to commercialisation."
       }
+    </script> -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Packbone Consulting",
+        "alternateName": "Packbone",
+        "url": "https://packboneconsulting.netlify.app/",
+        "logo": "https://packboneconsulting.netlify.app/pack-bone-logo-with-name.png",
+        "description": "Packbone Consulting is a packaging development consultancy providing end-to-end packaging solutions from concept to commercialisation."
+      }
     </script>
-
   </head>
 
   <body>
     <div id="root"></div>
 
-    <script
-      type="module"
-      src="/src/main.jsx"
-    ></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
