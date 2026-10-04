@@ -3347,70 +3347,6 @@ p {
   color: var(--white);
 }
 
-/* =========================================================
-   MOBILE DROPDOWN
-   ========================================================= */
-
-/* @media (max-width: 768px) {
-
-  .nav-dropdown {
-    display: block;
-
-    width: 100%;
-    height: auto;
-  }
-
-  .nav-dropdown-trigger {
-    width: 100%;
-
-    justify-content: space-between;
-
-    padding: 15px 0;
-
-    font-size: 15px;
-  }
-
-  .services-dropdown {
-    position: static;
-
-    width: 100%;
-
-    transform: none;
-
-    margin: 0 0 10px;
-
-    padding: 15px;
-
-    box-shadow: none;
-
-    animation: none;
-  }
-
-  .services-dropdown::before {
-    display: none;
-  }
-
-  .dropdown-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .dropdown-grid .dropdown-view-all {
-    grid-column: auto;
-  }
-
-  .dropdown-grid > a {
-    min-height: 46px;
-  }
-} */
-
-/* =========================================================
-   MOBILE DROPDOWN
-   ========================================================= */
-
-/* =========================================================
-   APPROACH - EXPANDABLE PROCESS DETAILS
-   ========================================================= */
-
 .full-approach-item:first-child {
   border-top: 1px solid var(--border);
 }
@@ -4947,6 +4883,65 @@ p {
   .dropdown-grid > a {
     min-height: 46px;
   }
+
+  .services-page,
+  .services-section {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Services intro */
+  .services-intro {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Main services list */
+  .services-list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Every service card must use the full width */
+  .large-service-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 45px minmax(0, 1fr) 25px;
+
+    gap: 15px;
+
+    padding: 40px 0;
+  }
+
+  /* Don't allow the middle content to create an oversized grid */
+  .large-service-main {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .large-service-main h2,
+  .large-service-description {
+    max-width: 100%;
+  }
+
+  /* Expanded points */
+  .service-points {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    grid-template-columns: 1fr;
+  }
+
+  /* Individual service point */
+  .service-point {
+    min-width: 0;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 700px){
@@ -5422,5 +5417,45 @@ p {
   .cta-button {
     width: 100%;
     justify-content: center;
+  }
+
+  .services-page,
+  .services-section,
+  .services-list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .large-service-card {
+    width: 100%;
+    grid-template-columns: 38px minmax(0, 1fr) 22px;
+    gap: 12px;
+    padding: 32px 0;
+  }
+
+  .large-service-main {
+    min-width: 0;
+  }
+
+  .large-service-main h2 {
+    font-size: clamp(28px, 8vw, 34px);
+    line-height: 1;
+  }
+
+  .large-service-description {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .service-points {
+    grid-template-columns: 1fr;
+    gap: 9px;
+    margin-top: 25px;
+    padding-top: 22px;
+  }
+
+  .service-point {
+    font-size: 10px;
+    line-height: 1.5;
   }
 }
