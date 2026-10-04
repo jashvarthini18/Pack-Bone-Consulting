@@ -27,9 +27,9 @@ function Hero() {
     <section className="hero">
       {/* <PageMeta title="Home" /> */}
       <PageMeta
-  title="Packaging Development Consultancy"
-  description="Packbone Consulting provides end-to-end packaging development, NPD, vendor development, cost optimisation, testing, validation and packaging project management solutions."
-/>
+        title="Packaging Development Consultancy"
+        description="Packbone Consulting provides end-to-end packaging development, NPD, vendor development, cost optimisation, testing, validation and packaging project management solutions."
+      />
       <div className="hero-grid"></div>
 
       <div className="hero-orbit orbit-one"></div>
@@ -81,7 +81,7 @@ function Hero() {
         </div>
 
         <div className="hero-visual">
-          <img src="./pack-bone-logo-with-name.png" alt="packbone" />
+          <img src="./pack-bone-logo-with-name.png" alt="Packbone Consulting" />
         </div>
       </div>
     </section>
