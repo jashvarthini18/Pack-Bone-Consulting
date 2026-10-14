@@ -105,9 +105,9 @@ function Contact() {
 
                   <div>
                     <small>PHONE</small>
-                    <a href="tel:+919841358284">+91 98413 58284</a>
-
+                    
                     <a href="tel:+917358053140">+91 73580 53140</a>
+                    <a href="tel:04446416913">044 4641 6913</a>
                   </div>
                 </div>
 
@@ -120,7 +120,7 @@ function Contact() {
                     <small>LINKEDIN</small>
 
                     <a
-                      href="YOUR_LINKEDIN_URL"
+                      href="https://www.linkedin.com/company/packboneconsulting/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
